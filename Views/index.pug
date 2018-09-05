@@ -1,0 +1,18 @@
+doctype html
+html
+    include includes/head.pug
+    body
+        h1= title
+        p I love lamp!
+            ul
+                each user in users
+                    li= user.username + ':' + user.email
+                each title in titles
+                    li= title.title
+        include includes/body.pug
+        include includes/inputs.pug
+        include includes/date.pug
+        include includes/foot.pug
+
+
+
